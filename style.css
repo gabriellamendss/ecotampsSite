@@ -244,3 +244,10 @@ justify-content: center;
     background-color: #cac7f0;
   }
   /* FIM FAQ */
+
+@media screen and (max-width: 768px){
+  .cima{
+    align-items: center;
+    padding: 15px 2%;
+  }
+}
