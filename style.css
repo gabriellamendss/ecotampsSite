@@ -39,7 +39,7 @@ header {
     padding-left: 6ch;
     padding-top: 10px;
     align-items: center;
-    background: url('img/fundo.png');
+    background: url('fundo.png');
     background-size: cover;
     background-position: center;
     display: flex;
