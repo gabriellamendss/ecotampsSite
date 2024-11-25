@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ECOTAMPS</title>
+<script src="script.js" defer></script>
+<link rel="stylesheet" href="style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+<link rel="icon" type="image/png" href="img/leafLogo.png">
+
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  
+</head>
+<body>   
+<header>
+<header id="header-auth">
+    <div class="logo">
+        <img src="img/leaf.png" height="100px">
+    </div>
+
+
+    <div>
+        <button class="entrar-btn" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Cadastre-se</button>
+        <button class="cadastro-btn" onclick="window.location.href='#entrar'">Entrar</button>
+    </div>
+</header>
+<div class="cima">
+    <div class="cima-content">
+             <h1>ECOTAMPS</h1>
+             <h3>Um novo jeito de reciclar</h3>
+             <p>Participe dessa jornada que mistura games com um mundo melhor</p>
+             <!--ajeita essa frase aq q ta feiosa-->
+             <button id='comece' href="#">Comece agora!</button>
+           
+            </div>
+            </div>
+    </header>
+<!--POP UP DO CADASTRO 
+-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Cadastre-se</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                
+
+                <form class="row g-3">
+                    <div class="col-md-6">
+                      <label for="inputEmail4" class="form-label">Nome</label>
+                      <input type="text" class="form-control" id="inputName">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputSenha" class="form-label">Senha</label>
+                      <input type="password" class="form-control" id="inputSenha">
+                    </div>
+                    <div class="col-12">
+                      <label for="inputAddress" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="inputAddress" placeholder="xxx@email.com">
+                    </div>
+                    <div class="col-12">
+                      <label for="inputAddress2" class="form-label">Endereço</label>
+                      <input type="text" class="form-control" id="inputAddress2" placeholder="Rua 59">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputCity" class="form-label">Cidade</label>
+                      <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="col-md-4">
+                      <label for="inputState" class="form-label">Estado</label>
+                      <select id="inputState" class="form-select">
+                        <option selected>Escolha</option>
+                        <option>Penambuco</option>
+                        <option>Alagoas</option>
+                        <option>Paraíba</option>
+                        <option>Ceará</option>
+                      </select>
+                    </div>
+                    <div class="col-md-2">
+                      <label for="inputZip" class="form-label">Cep</label>
+                      <input type="text" class="form-control" id="inputZip">
+                    </div>
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                          Receber avisos
+                        </label>
+                      </div>
+                    </div>
+                  </form>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Enviar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<section id='sobre'>
+<container id="sobreco">
+  <i class='bx bx-store-alt'></i>
+    <h4>Versatil</h4>
+    <h6>Nossa maquina pode ser instalada em qualquer lugar ja que tem a bateria acoplada em seu interior.</h6>
+</container>
+
+<container id="sobreco">
+  <i class='bx bxs-balloon'></i>
+    <h4>Divertido</h4>
+    <h6>Com o nosso produto os seus clientes ficam engajados de manter um ambiente limpo.</h6>
+</container>
+
+<container id="sobreco">
+  <i class='bx bxs-battery-charging'></i>
+    <h4>Low maintenance</h4>
+    <h6>Com baterias preparadas para durar 15 dias sem trocar, a maquina da EcoTamps fica confortavel para os usuarios</h6>
+</container>
+
+   </section>
+
+
+<!-- FAQ Section -->
+
+<div class="geral-faq">
+<br>
+    <h2>Perguntas frequentes</h2><br>
+
+    <div class="faq">
+      <button class="accordion">Quais materiais a máquina consegue reciclar?
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <div class="pannel">
+        <p>
+          A máquina é projetada para receber diversos tipos de materiais recicláveis, incluindo garrafas PET, papéis, embalagens plásticas e outros. Essa variedade facilita o descarte correto e incentiva a reciclagem de diferentes itens em um único local.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <button class="accordion">Como funciona o sistema de recompensas?"
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <div class="pannel">
+        <p>
+          O dispositivo é equipado com um sistema de QR code que registra a quantidade de material reciclado. A cada item depositado, o usuário acumula pontos que podem ser trocados por recompensas definidas pelo administrador do sistema, como descontos ou brindes.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <button class="accordion">
+        A instalação e manutenção da máquina são complexas?
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <div class="pannel">
+        <p>
+          A máquina foi projetada para instalação e manutenção simplificadas. Utilizando a plataforma Arduino, ela permite ajustes e reparos de forma prática, com manuais e suporte técnico disponíveis para ajudar em qualquer necessidade.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <button class="accordion">
+        Qual é o consumo de energia da máquina?
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <div class="pannel">
+        <p>
+          O consumo de energia da máquina é baixo, sendo otimizada para operar em ambientes públicos com mínima demanda elétrica. Isso torna o uso sustentável e de baixo custo para o proprietário.
+        </p>
+      </div>
+    </div>
+
+    <footer id="meio">
+        <p>&copy; 2024 GoodTrip. - Privacidade - Termos - Mapa do site - +55 (81) 248984359</p>
+    </footer>
+
+</html>

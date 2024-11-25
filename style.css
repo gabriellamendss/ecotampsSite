@@ -1,0 +1,246 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    font-family: "Inter", sans-serif;
+}
+
+/* CORES QUE EU USEI EM GERAL
+#002400 - verde escuro
+#DBD2E0 - lavanda
+#1c8b62 - verde azulado
+#35a719 - verde neon
+
+*/
+
+/*específico para o header */
+#header-auth {
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(99, 59, 59, 0.1);
+    z-index: 1000;
+    display: flex;
+    gap: 0px; /* Espaçamento entre os botões */
+}
+
+header {
+    background-color: #002400;
+    color: #f8f8f8;
+    
+}
+
+.cima{
+    height: 80vh;
+    padding-left: 6ch;
+    padding-top: 10px;
+    align-items: center;
+    background: url('img/fundo.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+  
+  
+}
+
+.cima-content{
+    max-width: 600px;
+    
+}
+
+.cima-content h1{
+    font-size: 100px;
+    font-weight: 39;
+}
+
+.cima-content h3{
+    font-size: 28px;
+    color: #35a719;
+}
+
+.cima-content p{
+    font-size: 16px;
+}
+
+#comece{
+    background-color: transparent;
+    color: #f4f4f7;
+    border: 2px solid;
+    padding: 10px 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transition: 0.2s ease;
+}
+
+#comece:hover{
+    background-color: transparent;
+    color: #35a719;
+    border: 2px solid;
+    padding: 10px 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+}
+
+
+.entrar-btn {
+    background-image: linear-gradient(to right, #1c8b62, #35a719); 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer; 
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transition: 0.2s ease; 
+}
+
+/*sim, ta ao contrario, o botao cadastro é o entrar, chore  */
+.cadastro-btn {
+    
+    background-color: transparent;
+    color: #f7f7fa;
+    border: none;
+    padding: 10px 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    text-decoration: underline;
+    transition: 0.2s ease;
+}
+
+/* efeito hover*/
+.cadastro-btn:hover {
+    opacity: 0.6;
+    
+}
+.entrar-btn:hover {
+    opacity: 0.6;
+}
+
+#meio{text-align: center;}
+
+
+footer{
+
+padding-bottom: 10px;
+padding-top: 30px;
+position: relative;
+color: #1c8b62;
+justify-content: center;
+
+}
+
+/*PARTE DO POP-UP */
+.modal-body{
+    background-color: transparent;
+    color: #050505;
+
+}
+
+.modal-footer button{ 
+    background-image: linear-gradient(to right, #1c8b62, #35a719); 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer; 
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+}
+
+.modal-header{
+    background-image: linear-gradient(to right, #1c8b62, #35a719);
+    color:#f2f2f2
+}
+/* FIM PARTE DO POP-UP */
+
+
+/* SOBRE */
+#sobre{
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    padding: 60px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(99, 59, 59, 0.1);
+    z-index: 1000;
+    display: flex;
+    gap: 10px; /* Espaçamento entre os botões */
+  
+}
+#sobreco{
+   padding: 16px;
+
+}
+/* FIM SOBRE */
+
+.geral-faq {
+    max-width: 95%;
+    margin: auto;
+  }
+  
+  .geral-faq > p,
+  .geral-faq > h1 {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  
+  .geral-faq > h1 {
+    letter-spacing: 3px;
+  }
+  
+  .accordion {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+    padding: 2rem 2.5rem;
+    border: none;
+    outline: none;
+    transition: 0.2s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+  }
+  
+  .accordion i {
+    font-size: 1.6rem;
+  }
+  
+  .active .accordion {
+    background-color: #002400;
+    color: #f2f2f2
+
+  }
+  .accordion:hover {
+    background-color:  #002400;
+    color: #f2f2f2;
+  }
+  .pannel {
+    padding: 0 2rem 2.5rem 2rem;
+    background-color: white;
+    overflow: hidden;
+    background-color: #f1f7f5;
+    display: none;
+    transition: 0.4s ease;
+  }
+  .active .pannel{
+    background-color: #002400;
+    color: #f2f2f2;
+}
+
+  .pannel p {
+    color: #f2f2f2;
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+  
+  .faq {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 10px 0;
+  }
+  .faq.active {
+    border: none;
+    background-color: #cac7f0;
+  }
+  /* FIM FAQ */
