@@ -2,8 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 * {
+    margin: 0;
+    padding: 0;
     font-family: "Inter", sans-serif;
 }
+  body {
+    display: flex;
+    flex-direction: column;
+    
+  }
 
 /* CORES QUE EU USEI EM GERAL
 #002400 - verde escuro
@@ -122,7 +129,7 @@ footer{
 
 padding-bottom: 10px;
 padding-top: 30px;
-position: relative;
+
 color: #1c8b62;
 justify-content: center;
 
@@ -172,19 +179,36 @@ justify-content: center;
 }
 /* FIM SOBRE */
 
+h2 {
+  margin-left: 700px;
+}
+
 .geral-faq {
     max-width: 95%;
     margin: auto;
+    display: flex;
+    gap: 40px;
+    width: 100%;
+    
   }
+  .hh {
+    display: flex;
+    flex-direction: column;
+  }
+  
   
   .geral-faq > p,
   .geral-faq > h1 {
     margin: 1.5rem 0;
     text-align: center;
+    
+    
   }
   
   .geral-faq > h1 {
     letter-spacing: 3px;
+    
+    
   }
   
   .accordion {
@@ -210,7 +234,6 @@ justify-content: center;
   .active .accordion {
     background-color: #002400;
     color: #f2f2f2
-
   }
   .accordion:hover {
     background-color:  #002400;
@@ -238,6 +261,7 @@ justify-content: center;
   .faq {
     border: 1px solid rgba(0, 0, 0, 0.2);
     margin: 10px 0;
+
   }
   .faq.active {
     border: none;
@@ -253,5 +277,17 @@ justify-content: center;
  .cima-content h1{
     font-size: 90px;
     font-weight: 39;
+  }
+
+  .cima h1 {
+    font-size: 75px;
+  }
+
+  #sobre {
+    padding: 0px;
+  }
+
+  .geral-faq {
+    flex-direction: column;
   }
 }
